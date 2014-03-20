@@ -1,0 +1,7 @@
+C:\Adeel\Marc\Lattice\ParserExtractor\Ropnoy.Lattice.Core\bin\Debug\Ropnoy.Lattice.Core.dll
+C:\Adeel\Marc\Lattice\ParserExtractor\Ropnoy.Lattice.Core\bin\Debug\Ropnoy.Lattice.Core.pdb
+C:\Adeel\Marc\Lattice\ParserExtractor\Ropnoy.Lattice.Core\obj\Debug\Ropnoy.Lattice.Core.csprojResolveAssemblyReference.cache
+C:\Adeel\Marc\Lattice\ParserExtractor\Ropnoy.Lattice.Core\obj\Debug\Ropnoy.Lattice.Core.dll
+C:\Adeel\Marc\Lattice\ParserExtractor\Ropnoy.Lattice.Core\obj\Debug\Ropnoy.Lattice.Core.pdb
+C:\Adeel\Marc\Lattice\ParserExtractor\Ropnoy.Lattice.Core\bin\Debug\Ropnoy.Lattice.Domain.dll
+C:\Adeel\Marc\Lattice\ParserExtractor\Ropnoy.Lattice.Core\bin\Debug\Ropnoy.Lattice.Domain.pdb

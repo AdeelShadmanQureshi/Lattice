@@ -1,0 +1,12 @@
+C:\Adeel\Marc\Lattice\ParserExtractor\Ropnoy.Lattice.Dal\bin\Debug\Ropnoy.Lattice.Dal.dll.config
+C:\Adeel\Marc\Lattice\ParserExtractor\Ropnoy.Lattice.Dal\bin\Debug\Ropnoy.Lattice.Dal.dll
+C:\Adeel\Marc\Lattice\ParserExtractor\Ropnoy.Lattice.Dal\bin\Debug\Ropnoy.Lattice.Dal.pdb
+C:\Adeel\Marc\Lattice\ParserExtractor\Ropnoy.Lattice.Dal\bin\Debug\EntityFramework.dll
+C:\Adeel\Marc\Lattice\ParserExtractor\Ropnoy.Lattice.Dal\bin\Debug\EntityFramework.SqlServer.dll
+C:\Adeel\Marc\Lattice\ParserExtractor\Ropnoy.Lattice.Dal\bin\Debug\EntityFramework.xml
+C:\Adeel\Marc\Lattice\ParserExtractor\Ropnoy.Lattice.Dal\bin\Debug\EntityFramework.SqlServer.xml
+C:\Adeel\Marc\Lattice\ParserExtractor\Ropnoy.Lattice.Dal\obj\Debug\Ropnoy.Lattice.Dal.dll
+C:\Adeel\Marc\Lattice\ParserExtractor\Ropnoy.Lattice.Dal\obj\Debug\Ropnoy.Lattice.Dal.pdb
+C:\Adeel\Marc\Lattice\ParserExtractor\Ropnoy.Lattice.Dal\bin\Debug\Ropnoy.Lattice.Domain.dll
+C:\Adeel\Marc\Lattice\ParserExtractor\Ropnoy.Lattice.Dal\bin\Debug\Ropnoy.Lattice.Domain.pdb
+C:\Adeel\Marc\Lattice\ParserExtractor\Ropnoy.Lattice.Dal\obj\Debug\Ropnoy.Lattice.Dal.csprojResolveAssemblyReference.cache
