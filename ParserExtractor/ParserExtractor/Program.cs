@@ -55,7 +55,7 @@ namespace ParserExtractor
                                 }
                                 else if (parameters.Count() == 5)
                                 {
-                                    var extractor = new SubscribeExtractor(layout);
+                                    var extractor = new SubscribeExtractor(layout, context);
                                     extractor.Extract(cell);
                                 }
                                 Console.WriteLine(parameters.Count());
