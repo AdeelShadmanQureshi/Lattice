@@ -18,12 +18,22 @@ namespace Ropnoy.Lattice.Dal
         public DbSet<Layout> Layouts { get; set; }
         public DbSet<Cell> Cells { get; set; }
 
-        public DbSet<Publish> Publishs { get; set; }
+        //public DbSet<Publish> Publishs { get; set; }
 
-        public DbSet<Instrument> Instruments { get; set; }
+        //public DbSet<Instrument> Instruments { get; set; }
 
-        public DbSet<Source> Sources { get; set; }
+        //public DbSet<Source> Sources { get; set; }
 
-        public DbSet<Fid> Fids { get; set; } 
+        //public DbSet<Fid> Fids { get; set; }
+
+
+        public DbSet<Call> Calls { get; set; }
+
+        public DbSet<Parameter> Parameters { get; set; }
+
+        public DbSet<Command> Commands { get; set; }
+
+        public DbSet<Argument> Arguments { get; set; } 
+
     }
 }

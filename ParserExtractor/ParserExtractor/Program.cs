@@ -1,5 +1,6 @@
 ﻿using Extractor;
 using Parser;
+using Ropnoy.Lattice.Core.BootStrapper;
 using Ropnoy.Lattice.Dal;
 using Ropnoy.Lattice.Domain;
 using System;
@@ -18,10 +19,14 @@ namespace ParserExtractor
 
         static void Main(string[] args)
         {
+            CallTypeBuilder.Build();
+
             var parser = new RawDataParser();
             parser.Parse(@"C:\Adeel\Marc\Lattice\Brent Swaps\Naptha NWE Server-test.layout");
 
             Execute();
+
+            Console.WriteLine("Processing Complete. Please press any key to quit.");
 
             Console.ReadKey();
         }
@@ -44,22 +49,8 @@ namespace ParserExtractor
 
                         if (Regex.IsMatch(originalContent, PublishSubscribeCell))
                         {
-                            var parameters = Regex.Match(originalContent, @"@.*\((.*)\)").Groups[1].Value.Split(',');
-
-                            if (parameters.Count() > 1)
-                            {
-                                if (parameters.Count() == 3)
-                                {
-                                    var extractor = new PublishExtractor(layout, context);
-                                    extractor.Extract(cell);
-                                }
-                                else if (parameters.Count() == 5)
-                                {
-                                    var extractor = new SubscribeExtractor(layout, context);
-                                    extractor.Extract(cell);
-                                }
-                                Console.WriteLine(parameters.Count());
-                            }
+                            var extractor = new CommandExtractor(layout, context);
+                            extractor.Extract(cell);
                         }
                     }
                 }

@@ -8,8 +8,12 @@ namespace Ropnoy.Lattice.Domain
 {
     public class Call
     {
+        public int Id { get; set; }
         public string Signature { get; set; }
 
-        public List<Parameter> Parameters { get; set; } 
+        public List<Parameter> Parameters { get; set; }
+
+        public string CallType { get; set; }
+
     }
 }

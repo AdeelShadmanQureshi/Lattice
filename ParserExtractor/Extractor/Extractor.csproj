@@ -42,12 +42,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FidExtractor.cs" />
-    <Compile Include="InstrumentExtractor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="PublishExtractor.cs" />
-    <Compile Include="SourceExtractor.cs" />
-    <Compile Include="SubscribeExtractor.cs" />
+    <Compile Include="CommandExtractor.cs" />
+    <Compile Include="ArgumentExtractor.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Ropnoy.Lattice.Core\Ropnoy.Lattice.Core.csproj">
