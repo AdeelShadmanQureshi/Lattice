@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
+using NLog;
 using Ropnoy.Lattice.Dal;
 using Ropnoy.Lattice.Domain;
 
@@ -11,19 +12,23 @@ namespace Parser
 {
     public class RawDataParser
     {
+        private static Logger logger = LogManager.GetCurrentClassLogger();
+
         const string StartCell = @"\[Cell:.+\]";
         const string EndCell = @"\[/Cell:.+\]";
         private const string FormulaCell1 = @"(?<=Formula==).*";
         private const string FormulaCell2 = @"(?<=Formula=).*";
         public void Parse(string filename)
         {
+            logger.Info("Parsing File - " + filename);
+
             using (var context = new LatticeContext())
             {
                 var layout = new Layout
                 {
                     Cells = new List<Cell>(),
-                    Filename = "Naptha NWE Server-test",
-                    Title = "Naptha NWE Server"
+                    Filename = filename,
+                    Title = filename
                 };
 
                 context.Layouts.Add(layout);

@@ -1,4 +1,7 @@
-﻿using Extractor;
+﻿using System.Configuration;
+using System.IO;
+using Extractor;
+using NLog;
 using Parser;
 using Ropnoy.Lattice.Core.BootStrapper;
 using Ropnoy.Lattice.Dal;
@@ -15,16 +18,29 @@ namespace ParserExtractor
 {
     public class Program
     {
+        private static readonly Logger Logger = LogManager.GetCurrentClassLogger();
+ 
         private const string PublishSubscribeCell = @"@";
 
         static void Main(string[] args)
         {
+            Logger.Info("Execution Started");
+
             CallTypeBuilder.Build();
 
-            var parser = new RawDataParser();
-            parser.Parse(@"C:\Adeel\Marc\Lattice\Brent Swaps\Naptha NWE Server-test.layout");
+           // var folderToRead = ConfigurationManager.AppSettings["LayoutFolder"];
+
+            var folderToRead = @"C:\Adeel\Marc\Lattice\Brent Swaps";
+
+            foreach (var fileName in Directory.EnumerateFiles(folderToRead, "*.layout"))
+            {
+                var parser = new RawDataParser();
+                parser.Parse(fileName);
+            }
 
             Execute();
+
+            Logger.Info("Execution Finished");
 
             Console.WriteLine("Processing Complete. Please press any key to quit.");
 
@@ -40,7 +56,9 @@ namespace ParserExtractor
 
                 foreach (var layout in layouts)
                 {
-                    var cells = (from cell in context.Cells
+                    Logger.Info("Processing Layout # " + layout.Id);
+
+                    var cells = (from cell in layout.Cells
                                  select cell).ToList();
 
                     foreach (var cell in cells)
