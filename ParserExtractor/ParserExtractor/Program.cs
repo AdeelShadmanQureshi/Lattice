@@ -25,18 +25,23 @@ namespace ParserExtractor
         static void Main(string[] args)
         {
             Logger.Info("Execution Started");
+            Console.WriteLine("Processing Started");
 
             CallTypeBuilder.Build();
 
-           // var folderToRead = ConfigurationManager.AppSettings["LayoutFolder"];
+            var folderToRead = ConfigurationManager.AppSettings["LayoutFolder"];
 
-            var folderToRead = @"C:\Adeel\Marc\Lattice\Brent Swaps";
+            Console.WriteLine("Layout Folder to used " + folderToRead);
 
             foreach (var fileName in Directory.EnumerateFiles(folderToRead, "*.layout"))
             {
+                Console.WriteLine(@"Parsing (Saving the layout to database) - " + fileName);
+
                 var parser = new RawDataParser();
                 parser.Parse(fileName);
             }
+
+            Console.WriteLine("Extracting Commands and Arguments");
 
             Execute();
 
