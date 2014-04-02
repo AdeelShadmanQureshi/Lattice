@@ -24,14 +24,20 @@ namespace ParserExtractor
 
         static void Main(string[] args)
         {
+            AppDomain.CurrentDomain.UnhandledException += AllUnhandledExceptionCatcher;
+
             Logger.Info("Execution Started");
             Console.WriteLine("Processing Started");
 
+            Console.WriteLine("Start Building the Call and Parameter lookup tables");
             CallTypeBuilder.Build();
+            Console.WriteLine("Finish Building the Call and Parameter lookup tables");
 
             var folderToRead = ConfigurationManager.AppSettings["LayoutFolder"];
 
             Console.WriteLine("Layout Folder to used " + folderToRead);
+
+            Console.WriteLine("Start reading and saving all the layout files in the given folder");
 
             foreach (var fileName in Directory.EnumerateFiles(folderToRead, "*.layout"))
             {
@@ -41,9 +47,16 @@ namespace ParserExtractor
                 parser.Parse(fileName);
             }
 
-            Console.WriteLine("Extracting Commands and Arguments");
+            Console.WriteLine("Finish reading and saving files");
+
+            
+
+            Console.WriteLine("Start Extracting Commands and Arguments");
 
             Execute();
+
+
+            Console.WriteLine("Finish Extracting Commands and Arguments");
 
             Logger.Info("Execution Finished");
 
@@ -79,8 +92,15 @@ namespace ParserExtractor
                 }
             }
         }
+
+        public static void AllUnhandledExceptionCatcher(object sender, UnhandledExceptionEventArgs  e)
+        {
+            Console.WriteLine(e.ExceptionObject.ToString());
+            Logger.ErrorException(e.ExceptionObject.ToString(), (Exception)e.ExceptionObject);
+            Console.WriteLine("Press Enter to continue");
+            Console.ReadLine();
+            Environment.Exit(1);
+        }
     }
-
-
 }
 
