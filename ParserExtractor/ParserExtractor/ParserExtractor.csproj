@@ -123,6 +123,10 @@
       <Project>{a4ff7ee0-db9a-4dc0-a699-eb3d90d27734}</Project>
       <Name>Ropnoy.Lattice.Domain</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Ropnoy.Lattice.Linker\Ropnoy.Lattice.Linker.csproj">
+      <Project>{36C932DD-85B3-4DCC-9653-CDA4C92085F2}</Project>
+      <Name>Ropnoy.Lattice.Linker</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Transformer\Transformer.csproj">
       <Project>{D57405A7-8256-41C3-977D-3B77131DFFDE}</Project>
       <Name>Transformer</Name>

@@ -12,6 +12,7 @@ using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
+using Ropnoy.Lattice.Linker;
 using Transformer;
 
 namespace ParserExtractor
@@ -29,10 +30,36 @@ namespace ParserExtractor
             Logger.Info("Execution Started");
             Console.WriteLine("Processing Started");
 
-            Console.WriteLine("Start Building the Call and Parameter lookup tables");
-            CallTypeBuilder.Build();
-            Console.WriteLine("Finish Building the Call and Parameter lookup tables");
+            //Console.WriteLine("Start Building the Call and Parameter lookup tables");
+            //CallTypeBuilder.Build();
+            //Console.WriteLine("Finish Building the Call and Parameter lookup tables");
 
+            Parse();
+
+
+            //Console.WriteLine("Start Extracting Commands and Arguments");
+
+            //Execute();
+
+
+            //Console.WriteLine("Finish Extracting Commands and Arguments");
+
+            Console.WriteLine("Start Finding Inter Layout Links");
+
+            Link();
+
+
+            Console.WriteLine("Finish Finding Inter Layout Links");
+
+            Logger.Info("Execution Finished");
+
+            Console.WriteLine("Processing Complete. Please press any key to quit.");
+
+            Console.ReadKey();
+        }
+
+        private static void Parse()
+        {
             var folderToRead = ConfigurationManager.AppSettings["LayoutFolder"];
 
             Console.WriteLine("Layout Folder to used " + folderToRead);
@@ -48,21 +75,14 @@ namespace ParserExtractor
             }
 
             Console.WriteLine("Finish reading and saving files");
+        }
 
-            
+        private static void Link()
+        {
+            var context = new LatticeContext();
 
-            Console.WriteLine("Start Extracting Commands and Arguments");
-
-            Execute();
-
-
-            Console.WriteLine("Finish Extracting Commands and Arguments");
-
-            Logger.Info("Execution Finished");
-
-            Console.WriteLine("Processing Complete. Please press any key to quit.");
-
-            Console.ReadKey();
+            var linker = new LayoutLinker(context);
+            linker.Link();
         }
 
         private static void Execute()
