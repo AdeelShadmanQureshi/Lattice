@@ -73,7 +73,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>vQlmY/X5n7c2MyYzqB0bex0XYDVpfu72ZgeKcPiPcgc=</dsig:DigestValue>
+        <dsig:DigestValue>gDF9nQjGIXTp8hX+M3RhcW7kIbindw5RStuSX2z2v7Y=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -97,19 +97,19 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>rkv9D822yskCDKyz43VjJ7Bm/Boloxs3DfT/gHmA2DQ=</dsig:DigestValue>
+        <dsig:DigestValue>ujV4P3bUwLbG8COjo+UcAMIlpP8ijoHFp8cuKvBT6pQ=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ParserExtractor.exe" size="9216">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ParserExtractor.exe" size="8704">
       <assemblyIdentity name="ParserExtractor" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>e13CD4CiVOW+PJkghpuNW1HECLw862yOWFq2GFyAl5w=</dsig:DigestValue>
+        <dsig:DigestValue>rzuQ9W1U0sUlrmHmjiHd+5FyiNg9r4bMt3a/kFhs0rQ=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -121,31 +121,43 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>6Lrf739AXlrNYzHJI2Rr8VQpKhftMlmplOuSrx08KUs=</dsig:DigestValue>
+        <dsig:DigestValue>LU8LKcB2QYiV6o1KXd3ryL1uisqc38hCjkV5uqg3plY=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Ropnoy.Lattice.Dal.dll" size="5632">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Ropnoy.Lattice.Dal.dll" size="6144">
       <assemblyIdentity name="Ropnoy.Lattice.Dal" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>X5qTShbe4RH5eCEM5BVFFMfWzlIMqEPx4y0+M0jUe4Y=</dsig:DigestValue>
+        <dsig:DigestValue>nkmAnMyhhVcPdmuK4zzWOCg6ZumUEJgxw5/NnXwyFyo=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Ropnoy.Lattice.Domain.dll" size="11264">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Ropnoy.Lattice.Domain.dll" size="12288">
       <assemblyIdentity name="Ropnoy.Lattice.Domain" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>1RVZRMW1gNFl3JrlN7Rf/SksIXu9WPsakKPYppAdW4A=</dsig:DigestValue>
+        <dsig:DigestValue>xJwoFjvR23rOXcIyvqnsDMMECVOzwFTWUnRWr+SxHGk=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Ropnoy.Lattice.Linker.dll" size="8192">
+      <assemblyIdentity name="Ropnoy.Lattice.Linker" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>mf5Ias/T1fbQCC/KvpBl+LQLYDp6T8Wy8QiOmNb/4lg=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -157,7 +169,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>1vi6idw9MYf80XY1wo3lJVskvmnK523CHoAhvIyyxAs=</dsig:DigestValue>
+        <dsig:DigestValue>trvRwlP7HWdmyUnajmE2cGBDcC6242X8KtFAF95qhDA=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -170,13 +182,13 @@
       <dsig:DigestValue>DVtessEPMmOxq13+PZvvzKmfNNgq0O+iI+ldjmAoNxU=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="ParserExtractor.exe.config" size="1356">
+  <file name="ParserExtractor.exe.config" size="1562">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>MBLauzgBvpyoIMfbdcyeqE1QOWta4ZNZVkMCmiVbu9k=</dsig:DigestValue>
+      <dsig:DigestValue>WNlH6R/rO0INZpwxVzEFKa+p6ir/RUiepnW+6MEVvQY=</dsig:DigestValue>
     </hash>
   </file>
 </asmv1:assembly>

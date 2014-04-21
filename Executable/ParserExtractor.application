@@ -7,14 +7,14 @@
     <framework targetVersion="4.5" profile="Full" supportedRuntime="4.0.30319" />
   </compatibleFrameworks>
   <dependency>
-    <dependentAssembly dependencyType="install" codebase="ParserExtractor.exe.manifest" size="9807">
+    <dependentAssembly dependencyType="install" codebase="ParserExtractor.exe.manifest" size="10466">
       <assemblyIdentity name="ParserExtractor.exe" version="1.0.0.3" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>29qa8oLfJ2hl0hxwmx9q8vyg/kkKTSHaA4VNPCk8PAQ=</dsig:DigestValue>
+        <dsig:DigestValue>A9Ky/sxIGb9GgfbESmicE1m8L6QO0JqbjzIe+PexrkY=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
