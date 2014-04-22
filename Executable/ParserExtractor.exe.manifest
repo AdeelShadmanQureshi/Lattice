@@ -102,14 +102,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ParserExtractor.exe" size="8704">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ParserExtractor.exe" size="9216">
       <assemblyIdentity name="ParserExtractor" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>rzuQ9W1U0sUlrmHmjiHd+5FyiNg9r4bMt3a/kFhs0rQ=</dsig:DigestValue>
+        <dsig:DigestValue>5J2hgCKZq63xifTy2R963s9IwcsYQ35pyLBhL1TNMW0=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

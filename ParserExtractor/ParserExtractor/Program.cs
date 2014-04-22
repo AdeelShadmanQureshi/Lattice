@@ -30,19 +30,19 @@ namespace ParserExtractor
             Logger.Info("Execution Started");
             Console.WriteLine("Processing Started");
 
-            //Console.WriteLine("Start Building the Call and Parameter lookup tables");
-            //CallTypeBuilder.Build();
-            //Console.WriteLine("Finish Building the Call and Parameter lookup tables");
+            Console.WriteLine("Start Building the Call and Parameter lookup tables");
+            CallTypeBuilder.Build();
+            Console.WriteLine("Finish Building the Call and Parameter lookup tables");
 
-            //Parse();
-
-
-            //Console.WriteLine("Start Extracting Commands and Arguments");
-
-            //Execute();
+            Parse();
 
 
-            //Console.WriteLine("Finish Extracting Commands and Arguments");
+            Console.WriteLine("Start Extracting Commands and Arguments");
+
+            Execute();
+
+
+            Console.WriteLine("Finish Extracting Commands and Arguments");
 
             Console.WriteLine("Start Finding Inter Layout Links");
 
