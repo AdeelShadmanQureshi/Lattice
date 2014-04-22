@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
@@ -28,7 +29,7 @@ namespace Parser
                 {
                     Cells = new List<Cell>(),
                     Filename = filename,
-                    Title = filename
+                    Title = Path.GetFileNameWithoutExtension(filename)
                 };
 
                 context.Layouts.Add(layout);

@@ -1,5 +1,0 @@
-C:\Adeel\Marc\Lattice\ParserExtractor\Ropnoy.Lattice.Domain\bin\Debug\Ropnoy.Lattice.Domain.dll
-C:\Adeel\Marc\Lattice\ParserExtractor\Ropnoy.Lattice.Domain\bin\Debug\Ropnoy.Lattice.Domain.pdb
-C:\Adeel\Marc\Lattice\ParserExtractor\Ropnoy.Lattice.Domain\obj\Debug\Ropnoy.Lattice.Domain.dll
-C:\Adeel\Marc\Lattice\ParserExtractor\Ropnoy.Lattice.Domain\obj\Debug\Ropnoy.Lattice.Domain.pdb
-C:\Adeel\Marc\Lattice\ParserExtractor\Ropnoy.Lattice.Domain\obj\Debug\Ropnoy.Lattice.Domain.csprojResolveAssemblyReference.cache

@@ -34,7 +34,7 @@ namespace ParserExtractor
             //CallTypeBuilder.Build();
             //Console.WriteLine("Finish Building the Call and Parameter lookup tables");
 
-            Parse();
+            //Parse();
 
 
             //Console.WriteLine("Start Extracting Commands and Arguments");
@@ -83,6 +83,7 @@ namespace ParserExtractor
 
             var linker = new LayoutLinker(context);
             linker.Link();
+            context.SaveChanges();
         }
 
         private static void Execute()
